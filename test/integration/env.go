@@ -15,11 +15,11 @@ import (
 )
 
 const (
-	configPath = "/opt/gopath/src/github.com/hyperledger/fabric-cross-agent/test/fixtures/config/config_test.yaml"
+	configPath = "/opt/gopath/src/github.com/hyperledger/fabric-cross-agent/config/config_test.yaml"
 	//entityMatcherLocal config file containing entity matchers for local test
-	entityMatcherLocal = "/opt/gopath/src/github.com/hyperledger/fabric-cross-agent/test/fixtures/config/overrides/local_entity_matchers.yaml"
+	entityMatcherLocal = "/opt/gopath/src/github.com/hyperledger/fabric-cross-agent/config/overrides/local_entity_matchers.yaml"
 	//ConfigPathSingleOrg single org version of 'configPath' for testing discovery
-	ConfigPathSingleOrg = "/opt/gopath/src/github.com/hyperledger/fabric-cross-agent/test/fixtures/config/config_e2e_single_org.yaml"
+	ConfigPathSingleOrg = "/opt/gopath/src/github.com/hyperledger/fabric-cross-agent/config/config_e2e_single_org.yaml"
 )
 
 // ConfigBackend contains config backend for integration tests

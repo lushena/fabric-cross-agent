@@ -14,7 +14,7 @@ import (
 
 func TestE2E(t *testing.T) {
 	t.Run("Base", func(t *testing.T) {
-		configPath := "/opt/gopath/src/github.com/hyperledger/fabric-cross-agent/test/fixtures/config/config_e2e.yaml"
+		configPath := "/opt/gopath/src/github.com/hyperledger/fabric-cross-agent/config/config_e2e.yaml"
 		Run(t, config.FromFile(configPath))
 	})
 }
