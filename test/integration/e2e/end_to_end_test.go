@@ -14,12 +14,7 @@ import (
 
 func TestE2E(t *testing.T) {
 	t.Run("Base", func(t *testing.T) {
-		configPath := "/opt/gopath/src/github.com/hyperledger/fabric-sdk-go/test/fixtures/config/config_e2e.yaml"
+		configPath := "/opt/gopath/src/github.com/hyperledger/fabric-cross-agent/test/fixtures/config/config_e2e.yaml"
 		Run(t, config.FromFile(configPath))
 	})
-
-	// t.Run("NoOrderer", func(t *testing.T) {
-	// 	//Using setup done set above by end to end test, run below test with new config which has no orderer config inside
-	// 	runWithNoOrdererConfig(t, config.FromFile(integration.GetConfigPath("config_e2e_no_orderer.yaml")))
-	// })
 }

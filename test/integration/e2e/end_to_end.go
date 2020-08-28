@@ -7,7 +7,6 @@ SPDX-License-Identifier: Apache-2.0
 package e2e
 
 import (
-	"fmt"
 	"strconv"
 	"testing"
 	"time"
@@ -188,7 +187,6 @@ func executeCC(t *testing.T, client *channel.Client) {
 }
 
 func queryCC(t *testing.T, client *channel.Client, targetEndpoints ...string) []byte {
-	fmt.Printf("target endpoint:%s\n", targetEndpoints)
 	response, err := client.Query(channel.Request{ChaincodeID: ccID, Fcn: "GetAllAssets", Args: [][]byte{[]byte("GetALLAssets")}},
 		channel.WithRetry(retry.DefaultChannelOpts),
 		channel.WithTargetEndpoints(targetEndpoints...),

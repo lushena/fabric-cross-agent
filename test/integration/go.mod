@@ -4,7 +4,7 @@
 
 module github.com/hyperledger/fabric-sdk-go/test/integration
 
-replace github.com/hyperledger/fabric-sdk-go => ../../
+// replace github.com/hyperledger/fabric-sdk-go => ../../
 
 require (
 	github.com/golang/protobuf v1.3.3
@@ -13,6 +13,7 @@ require (
 	github.com/hyperledger/fabric-sdk-go v1.0.0-beta3
 	github.com/pkg/errors v0.8.1
 	github.com/stretchr/testify v1.5.1
+	golang.org/x/tools/gopls v0.4.4 // indirect
 	google.golang.org/grpc v1.29.1
 )
 
