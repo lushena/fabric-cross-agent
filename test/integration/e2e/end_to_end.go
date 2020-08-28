@@ -94,7 +94,7 @@ func e2eTest(t *testing.T, sdk *fabsdk.FabricSDK) {
 	}
 
 	existingValue := queryCC(t, client)
-	fmt.Printf("query value:%s\n", existingValue)
+
 	t.Logf("query value:%s\n", existingValue)
 	// ccEvent := moveFunds(t, client)
 
