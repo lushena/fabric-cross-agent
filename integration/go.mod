@@ -7,6 +7,7 @@ module github.com/hyperledger/fabric-cross-agent/integration
 // replace github.com/hyperledger/fabric-sdk-go => ../../
 
 require (
+	github.com/gogo/protobuf v1.1.1
 	github.com/golang/protobuf v1.3.3
 	github.com/hyperledger/fabric-config v0.0.5
 	github.com/hyperledger/fabric-protos-go v0.0.0-20200819205323-f34c922b9e79
